@@ -445,3 +445,47 @@ body, html {
     margin: 0.5rem;
   }
 }
+/* For mobile: make sidebar collapsible or vertical */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem;
+    z-index: 999;
+  }
+
+  .sidebar nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .sidebar a {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  main {
+    margin-left: 0; /* no fixed side margin on mobile */
+    padding-top: 5rem;
+  }
+}
+main, section {
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+.skills {
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
