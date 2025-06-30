@@ -404,3 +404,44 @@ body, html {
   margin: 0.4rem 0;
   line-height: 1.5;
 }
+.hero {
+  text-align: center;
+  padding: 2rem;
+  word-wrap: break-word;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1rem;
+  max-width: 100%;
+  line-height: 1.5;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  .sidebar {
+    width: 100%;
+    text-align: center;
+  }
+
+  .logo-area h1 {
+    font-size: 1.5rem;
+  }
+
+  .sidebar nav a {
+    display: inline-block;
+    margin: 0.5rem;
+  }
+}
