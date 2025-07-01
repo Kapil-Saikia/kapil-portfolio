@@ -423,128 +423,31 @@ body, html {
   overflow-wrap: break-word;
 }
 @media (max-width: 768px) {
-  .hero h2 {
-    font-size: 1.5rem;
-  }
-
-  .hero p {
-    font-size: 0.9rem;
-  }
-
-  .sidebar {
-    width: 100%;
-    text-align: center;
-  }
-
-  .logo-area h1 {
-    font-size: 1.5rem;
-  }
-
-  .sidebar nav a {
-    display: inline-block;
-    margin: 0.5rem;
-  }
-}
-/* For mobile: make sidebar collapsible or vertical */
-@media screen and (max-width: 768px) {
-  .sidebar {
-    position: fixed;
-    width: 100%;
-    height: auto;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 1rem;
-    z-index: 999;
-  }
-
-  .sidebar nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-
-  .sidebar a {
-    font-size: 0.9rem;
-    padding: 0.5rem;
-  }
-
-  main {
-    margin-left: 0; /* no fixed side margin on mobile */
-    padding-top: 5rem;
-  }
-}
-main, section {
-  max-width: 100%;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-
-.skills {
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-html, body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-@media (max-width: 768px) {
-  .sidebar {
-    width: 100%;
-    position: relative;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .sidebar nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .sidebar nav a {
-    margin: 8px;
-  }
-
-  main {
-    margin-left: 0;
-    padding-top: 1rem;
-  }
-
-  .logo-area h1 {
-    font-size: 1.5rem;
-  }
-
-  .logo-area img {
-    display: none; /* hide the logo img if needed */
-  }
-}
-@media (max-width: 768px) {
   body {
     flex-direction: column;
+    overflow-x: hidden;
   }
 
   .sidebar {
     width: 100%;
     height: auto;
     position: static;
-    display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 1rem 0;
-    background-color: #001f3f;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    background-color: #021B39;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    z-index: 999;
   }
 
   .logo-area img {
-    display: none; /* optional: hide the profile image */
+    display: none;
   }
 
   .logo-area h1 {
     font-size: 1.5rem;
+    margin: 0.5rem 0;
   }
 
   .sidebar nav {
@@ -564,11 +467,19 @@ html, body {
 
   main {
     margin-left: 0;
-    padding: 1rem;
     width: 100%;
+    padding: 1rem;
   }
 
   .card {
     width: 100%;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
   }
 }
