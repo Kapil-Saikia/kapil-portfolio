@@ -422,18 +422,18 @@ body, html {
   white-space: normal;
   overflow-wrap: break-word;
 }
-/* Fix for keeping full desktop layout on mobile */
 @media (max-width: 768px) {
   html, body {
+    overflow-x: auto;
     width: 100vw;
-    height: 100vh;
-    overflow: auto;
   }
 
   .sidebar {
-    width: 220px;
-    height: 100vh;
     position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 220px;
     flex-direction: column;
     align-items: center;
     background-color: #021B39;
@@ -442,12 +442,12 @@ body, html {
 
   main {
     margin-left: 240px;
+    width: calc(100vw - 240px);
     padding: 1rem;
-    width: calc(100% - 240px);
   }
 
   .logo-area img {
-    display: none; /* Optional: remove profile image */
+    display: none; /* optional */
   }
 
   .sidebar nav {
@@ -455,7 +455,7 @@ body, html {
     gap: 1rem;
   }
 
-  .sidebar nav a {
-    font-size: 0.9rem;
+  section {
+    max-width: 100%;
   }
 }
