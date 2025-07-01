@@ -422,6 +422,18 @@ body, html {
   white-space: normal;
   overflow-wrap: break-word;
 }
+.sidebar {
+  width: 220px;
+  min-width: 220px;     /* prevents shrinking */
+  flex-shrink: 0;        /* prevents from collapsing on small screens */
+  background-color: #021B39;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  height: 100vh;
+}
 @media (max-width: 768px) {
   body {
     flex-direction: column;
@@ -460,16 +472,4 @@ body, html {
   .card {
     padding: 1rem;
   }
-}
-
-
-body, html {
-  overflow-x: auto;
-}
-.hero h2,
-.hero p {
-  white-space: normal !important;
-  word-break: break-word;
-  overflow-wrap: break-word;
-  hyphens: auto;
 }
