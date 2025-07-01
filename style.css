@@ -423,14 +423,53 @@ body, html {
   overflow-wrap: break-word;
 }
 @media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
   .sidebar {
     width: 100%;
     height: auto;
-    position: relative;
-    /* REMOVE or COMMENT OUT */
+    position: static;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+  }
+
+  .sidebar nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .sidebar nav a {
+    font-size: 0.9rem;
+  }
+
+  main {
+    margin-left: 0;
+    padding: 1rem;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    padding: 1rem;
   }
 }
 
+
 body, html {
   overflow-x: auto;
+}
+.hero h2,
+.hero p {
+  white-space: normal !important;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
