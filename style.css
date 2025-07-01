@@ -489,3 +489,36 @@ html, body {
   max-width: 100vw;
   overflow-x: hidden;
 }
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .sidebar nav a {
+    margin: 8px;
+  }
+
+  main {
+    margin-left: 0;
+    padding-top: 1rem;
+  }
+
+  .logo-area h1 {
+    font-size: 1.5rem;
+  }
+
+  .logo-area img {
+    display: none; /* hide the logo img if needed */
+  }
+}
