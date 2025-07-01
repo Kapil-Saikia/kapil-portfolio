@@ -422,33 +422,7 @@ body, html {
   white-space: normal;
   overflow-wrap: break-word;
 }
-/* Force desktop layout on all devices */
-@media only screen and (max-width: 768px) {
-  html, body {
-    min-width: 1024px;       /* Minimum width for desktop */
-    overflow-x: auto !important;
-  }
 
-  main {
-    margin-left: 240px;      /* Keep sidebar layout */
-    width: calc(100% - 240px);
-    overflow-x: auto;
-  }
-
-  .sidebar {
-    position: fixed;
-    height: 100vh;
-    width: 220px;
-    top: 0;
-    left: 0;
-    z-index: 999;
-  }
-
-  .hero h2, .hero p {
-    word-break: normal;
-    white-space: normal;
-  }
-}
 body, html {
   overflow-x: auto;
 }
