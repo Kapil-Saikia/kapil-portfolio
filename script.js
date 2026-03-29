@@ -285,21 +285,20 @@ function initScrollAnimations() {
     const end    = parseInt(raw, 10);
     if (isNaN(end)) return;
 
-    gsap.fromTo({ val: 0 },
-      { val: end },
-      {
-        val: end,
-        duration: 1.5,
-        ease: 'power2.out',
-        onUpdate: function () {
-          el.textContent = Math.round(this.targets()[0].val) + suffix;
-        },
-        scrollTrigger: {
-          trigger: el,
-          start: 'top 88%',
-          once: true,
-        },
-      });
+    const counter = { val: 0 };
+    gsap.to(counter, {
+      val: end,
+      duration: 1.5,
+      ease: 'power2.out',
+      onUpdate: function () {
+        el.textContent = Math.round(counter.val) + suffix;
+      },
+      scrollTrigger: {
+        trigger: el,
+        start: 'top 88%',
+        once: true,
+      },
+    });
   });
 }
 
