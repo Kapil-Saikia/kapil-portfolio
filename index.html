@@ -2,250 +2,394 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-<title>Kapil Saikia - Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kapil Saikia — Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <aside class="sidebar">
-    <div class="logo-area">
-  <h1></h1>
-</div>
 
+  <!-- Cursor glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
 
-    <nav>
-      <nav>
-  <a href="#about"><i class="fas fa-user"></i> About</a>
-  <a href="#skills"><i class="fas fa-code"></i> Skills</a>
-  <a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a>
-  <a href="#resume"><i class="fas fa-file-alt"></i> Resume</a>
-  <a href="#achievements"><i class="fas fa-award"></i> Achievements</a>
-  <a href="#training"><i class="fas fa-graduation-cap"></i> Training</a>
-  <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
-</nav>
-
-    </nav>
-  </aside>
-
-  <main>
-    <section class="hero">
-      <h2>Kapil Saikia</h2>
-      <p>Machine Learning | Full Stack Developer | Python Enthusiast</p>
-    </section>
-
-    <section id="about" class="card glass">
-      <h3>About Me</h3>
-      <p>I am Kapil Saikia, a final-year B.Tech student in Computer Science and Engineering, with a strong foundation in Machine Learning, Python development, and full stack web technologies. I am deeply passionate about creating intelligent and user-centric digital solutions that bridge the gap between innovation and usability. I thrive on transforming ideas into scalable, impactful applications and continuously seek to expand my skill set by exploring modern tools and technologies. My long-term goal is to contribute meaningfully to the tech industry by developing real-world solutions that drive value and innovation.</p>
-    </section>
-
-    <section id="skills" class="card glass">
-      <h3>Skills</h3>
-      <div class="skills-wrapper">
-      <ul class="skills">
-       <ul class="skills">
-  <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" /> Python</li>
-  <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" /> JavaScript</li>
-  <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" /> HTML5</li>
-  <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" /> CSS3</li>
-  <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" /> Node.js</li>
-  <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js" /> Express.js</li>
-  <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django" /> Django</li>
-  <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" /> MongoDB</li>
-  <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" /> MySQL</li>
-  <li><img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="Machine Learning" /> Machine Learning</li>
-  <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" /> Git</li>
-  <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" /> GitHub</li>
-  <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy" /> NumPy</li>
-<li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas" /> Pandas</li>
-<li><img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg" alt="Matplotlib" /> Matplotlib</li>
-<li><img src="https://seaborn.pydata.org/_static/logo-wide-lightbg.svg" alt="Seaborn" /> Seaborn</li>
-<li><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="Scikit-learn" /> Scikit-learn</li>
-<li><img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="TensorFlow" /> TensorFlow</li>
-<li><img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Keras_logo.svg" alt="Keras" /> Keras</li>
-<li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch" /> PyTorch</li>
-<li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" /> Java</li>
-<li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" /> C</li>
-<li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" /> Flask</li>
-
-
-
-
-
-
-
-
-</ul>
-
-      </ul>
+  <!-- Top Navigation -->
+  <nav class="top-nav" id="topNav">
+    <div class="nav-brand">
+      <div class="brand-initials">KS</div>
+      <span class="brand-name">Kapil Saikia</span>
     </div>
-    </section>
-
-  <section id="projects" class="card glass">
-  <h3>Projects</h3>
-
-  <div class="project">
-    <h4>1. Audioflow – Web Music Application</h4>
-    <p>A sleek and responsive web music player built for seamless user experience, just like standard media apps.</p>
-    <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript, Node.js, MongoDB, JSON</p>
-    <p><strong>Role:</strong> Full Stack Web Developer</p>
-    <a href="https://github.com/Kapil-Saikia/AudioFlow-Minor-Project" target="_blank" class="btn">View Project</a>
-  </div>
-
-  <div class="project">
-    <h4>2. Restaurant Rating Prediction – Machine Learning Project</h4>
-    <p>Developed a regression model to predict a restaurant’s aggregate rating using real-world features and preprocessing techniques.</p>
-    <p><strong>Tech Stack:</strong> Python, Pandas, Scikit-learn, Jupyter Notebook</p>
-    <p><strong>Role:</strong> Machine Learning Developer</p>
-    <a href="https://github.com/Kapil-Saikia/Restaurant_Rating_Prediction_Project" target="_blank" class="btn">View Project</a>
-  </div>
- <div class="project">
-    <h4>3. Restaurant Recommendation System – Machine Learning Project</h4>
-    <p> Developed a content-based filtering system that recommends restaurants to users based on preferences like cuisine type and price range</p>
-    <p><strong>Tech Stack:</strong> Python, Pandas, Scikit-learn, Jupyter Notebook</p>
-    <p><strong>Role:</strong> Machine Learning Developer</p>
-    <a href="https://github.com/Kapil-Saikia/Restaurant-Recommendation-System" target="_blank" class="btn">View Project</a>
-  </div>
-  <div class="project">
-  <h4>4. SkyCast – Weather Application</h4>
-  <p>A responsive weather forecasting web application that displays real-time weather data using external APIs. Users can search for any city and view temperature, weather conditions, humidity, and more.</p>
-  <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript, JSON</p>
-  <p><strong>Role:</strong> Frontend Web Developer</p>
-  <a href="https://github.com/Kapil-Saikia/Weather_App-SkyCast" target="_blank" class="btn">View Project</a>
-</div>
-<div class="project">
-  <h4>5. AI Chatbot – Conversational Web Application</h4>
-  <p>A full stack AI-powered chatbot that uses HuggingFace’s DialoGPT model for generating human-like responses. The chatbot runs on Flask, stores chat history in SQLite, and offers a clean web UI with logs view functionality.</p>
-  <p><strong>Tech Stack:</strong> Python, Flask, HuggingFace Transformers, PyTorch, SQLite, HTML, CSS, JavaScript</p>
-  <p><strong>Role:</strong> Full Stack Developer (Python + ML)</p>
-  <a href="https://github.com/Kapil-Saikia/ai_chatbot_project" target="_blank" class="btn">View Project</a>
-</div>
-<div class="project">
-  <h4>6. Secure Authentication System</h4>
-  <p>A web application that implements secure user authentication using JSON Web Tokens (JWT). It features encrypted password storage with bcrypt, user registration/login, session handling, and admin-level access control. Built for real-world security use cases.</p>
-  <p><strong>Tech Stack:</strong> Python, Flask, JWT, bcrypt, PostgreSQL, HTML, CSS, JavaScript</p>
-  <p><strong>Role:</strong> Backend Developer</p>
-  <a href="https://github.com/Kapil-Saikia/secure-auth-system" target="_blank" class="btn">View Project</a>
-</div>
-
-
-
-
-</section>
-
-
-   <section id="resume" class="card glass">
-  <h3>Resume</h3>
-  <p>I’m always eager to explore new opportunities and take on challenging roles. You can view or download my latest resume below:</p>
-
-  <div style="margin-top: 1rem;">
-    <a href="your-resume-link.pdf" target="_blank" class="btn">📄 View Resume</a>
-  </div>
-</section>
-
-<section id="achievements" class="card glass">
-  <h3>Achievements</h3>
-
-  <div class="accordion">
-    <button class="accordion-btn">🎓 Machine Learning with Python – IBM</button>
-    <div class="accordion-panel">
-      <p>Completed IBM’s Machine Learning with Python course, covering supervised/unsupervised learning and model evaluation.</p>
-      <a href="https://www.coursera.org/account/accomplishments/verify/OUJHYVQFCYRY?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Dcourse" target="_blank">View Certificate</a>
+    <div class="nav-links">
+      <a href="#about"        class="nav-link">About</a>
+      <a href="#skills"       class="nav-link">Skills</a>
+      <a href="#projects"     class="nav-link">Projects</a>
+      <a href="#achievements" class="nav-link">Achievements</a>
+      <a href="#training"     class="nav-link">Experience</a>
+      <a href="#contact"      class="nav-link nav-cta magnetic-btn">Contact</a>
     </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 
-    <button class="accordion-btn">🌐 Web App Development with JS & MongoDB – Coursera</button>
-    <div class="accordion-panel">
-      <p>Learned full stack web development concepts using JavaScript, Node.js, and MongoDB.</p>
-      <a href="https://www.coursera.org/account/accomplishments/verify/CF5YDF9TKFLQ?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Dcourse" target="_blank">View Certificate</a>
-    </div>
-
-    <button class="accordion-btn">💾 Databases & SQL for Data Science With Python – IBM</button>
-    <div class="accordion-panel">
-      <p>Learned data extraction, joins, and query optimization with SQL for AI and data science.</p>
-      <a href="https://www.coursera.org/account/accomplishments/verify/VVE8ZHOEGLHY?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Dcourse" target="_blank">View Certificate</a>
-    </div>
-
-    <button class="accordion-btn">🐍 Python Certificate – HackerRank</button>
-    <div class="accordion-panel">
-      <p>Certified by HackerRank for demonstrating Python programming proficiency.</p>
-      <a href="https://www.hackerrank.com/certificates/de52d8acaa1e" target="_blank">View Certificate</a>
-    </div>
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#about"        class="mobile-nav-link">About</a>
+    <a href="#skills"       class="mobile-nav-link">Skills</a>
+    <a href="#projects"     class="mobile-nav-link">Projects</a>
+    <a href="#achievements" class="mobile-nav-link">Achievements</a>
+    <a href="#training"     class="mobile-nav-link">Experience</a>
+    <a href="#contact"      class="mobile-nav-link">Contact</a>
   </div>
-</section>
 
-
-<section id="training" class="card glass">
-  <h3>Training & Internships</h3>
-  <div class="training-item">
-    <h4>1.🤖 Machine Learning Internship</h4>
-    <p><strong>Organization:</strong> Cognifyz Technologies</p>
-    <p><strong>Duration:</strong> 10 June – 10 July 2025</p>
-    <p><strong>Description:</strong>  
-      Completed a one-month virtual internship focused on practical machine learning implementation. Worked on regression and classification tasks, applied data preprocessing, and explored model evaluation using Python, Pandas, and Scikit-learn.
-    </p>
-  </div>
-   <div class="training-item">
- <h4>2.🐍 Python Developer Internship</h4>
-<p><strong>Organization:</strong> Codec Technologies</p>
-<p><strong>Duration:</strong> 5 July – 5 August 2025</p>
-<p><strong>Description:</strong>  
-  Completed a one-month virtual internship focused on Python development. Worked on scripting, file handling, and automation tasks. Gained experience in modules like `os`, `requests`, and `datetime`, and built small utilities using Python best practices.
-</p>
-  </div>
-</section>
-
-
-
-    <section id="contact" class="card glass">
-      
-      <h3>Contact</h3>
-      <div class="social-icons">
-        <a href="mailto:kapilsaikia63@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-        <a href="https://www.linkedin.com/in/kapil-saikia-855178278?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/Kapil-Saikia" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.instagram.com/kapilsaikia025?igsh=MW1xbzdqcmpwdTFvMw==" target="_blank"><i class="fab fa-instagram"></i></a>
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for opportunities
       </div>
-      <form class="contact-form">
-  <label for="name">Name</label>
-  <input type="text" id="name" name="name" required>
+      <h1 class="hero-name">
+        <span class="name-line">Kapil</span>
+        <span class="name-line accent">Saikia</span>
+      </h1>
+      <p class="hero-tagline">Machine Learning &nbsp;&middot;&nbsp; Full Stack Developer &nbsp;&middot;&nbsp; Python Enthusiast</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary magnetic-btn">View Projects</a>
+        <a href="#contact"  class="btn btn-outline  magnetic-btn">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
 
-  <label for="email">Email</label>
-  <input type="email" id="email" name="email" required>
+  <!-- Bento Grid -->
+  <main class="bento-container">
 
-  <label for="message">Message</label>
-  <textarea id="message" name="message" rows="5" required></textarea>
+    <!-- About -->
+    <div class="bento-tile tile-about glass-card" id="about">
+      <div class="tile-label"><i class="fas fa-user"></i> About</div>
+      <div class="about-content">
+        <div class="about-avatar">
+          <div class="avatar-ring"><div class="avatar-inner">KS</div></div>
+          <div class="status-badge"><span class="status-dot"></span>Open to Work</div>
+        </div>
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>I am Kapil Saikia, a final-year B.Tech student in Computer Science and Engineering, with a strong foundation in Machine Learning, Python development, and full stack web technologies.</p>
+          <p>Deeply passionate about creating intelligent, user-centric digital solutions that bridge the gap between innovation and usability.</p>
+          <div class="about-stats">
+            <div class="stat-item"><span class="stat-num">6+</span><span class="stat-label">Projects</span></div>
+            <div class="stat-item"><span class="stat-num">4+</span><span class="stat-label">Certs</span></div>
+            <div class="stat-item"><span class="stat-num">2</span><span class="stat-label">Internships</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <button type="submit">Submit</button>
-</form>
+    <!-- Skills -->
+    <div class="bento-tile tile-skills glass-card" id="skills">
+      <div class="tile-label"><i class="fas fa-code"></i> Skills</div>
+      <h2>Tech Stack</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h4>Languages</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">C</span>
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4>Frameworks</h4>
+          <div class="skill-tags">
+            <span class="skill-tag accent-purple">Node.js</span>
+            <span class="skill-tag accent-purple">Express.js</span>
+            <span class="skill-tag accent-purple">Django</span>
+            <span class="skill-tag accent-purple">Flask</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4>ML / AI</h4>
+          <div class="skill-tags">
+            <span class="skill-tag accent-pink">TensorFlow</span>
+            <span class="skill-tag accent-pink">PyTorch</span>
+            <span class="skill-tag accent-pink">Scikit-learn</span>
+            <span class="skill-tag accent-pink">Keras</span>
+            <span class="skill-tag accent-pink">Pandas</span>
+            <span class="skill-tag accent-pink">NumPy</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4>Databases &amp; Tools</h4>
+          <div class="skill-tags">
+            <span class="skill-tag accent-green">MongoDB</span>
+            <span class="skill-tag accent-green">MySQL</span>
+            <span class="skill-tag accent-green">PostgreSQL</span>
+            <span class="skill-tag accent-green">Git</span>
+            <span class="skill-tag accent-green">GitHub</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    </section>
+    <!-- Projects header -->
+    <div class="bento-tile tile-projects-header" id="projects">
+      <div class="tile-label"><i class="fas fa-project-diagram"></i> Projects</div>
+      <h2>Featured Work</h2>
+    </div>
 
-    <footer>
-      &copy; 2025 Kapil Saikia. All rights reserved.
-    </footer>
+    <!-- Projects grid -->
+    <div class="projects-bento">
+      <div class="project-card glass-card project-featured">
+        <div class="project-number">01</div>
+        <div class="project-content">
+          <h3>Audioflow</h3>
+          <p class="project-subtitle">Web Music Application</p>
+          <p>A sleek and responsive web music player built for seamless user experience, just like standard media apps.</p>
+          <div class="project-tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Node.js</span><span>MongoDB</span>
+          </div>
+        </div>
+        <a href="https://github.com/Kapil-Saikia/AudioFlow-Minor-Project" target="_blank" class="project-link magnetic-btn" aria-label="View Audioflow project">
+          <i class="fas fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+
+      <div class="project-card glass-card">
+        <div class="project-number">02</div>
+        <div class="project-content">
+          <h3>Restaurant Rating Prediction</h3>
+          <p class="project-subtitle">Machine Learning</p>
+          <p>Regression model to predict a restaurant's aggregate rating using real-world features and preprocessing.</p>
+          <div class="project-tech">
+            <span>Python</span><span>Pandas</span><span>Scikit-learn</span>
+          </div>
+        </div>
+        <a href="https://github.com/Kapil-Saikia/Restaurant_Rating_Prediction_Project" target="_blank" class="project-link magnetic-btn" aria-label="View project">
+          <i class="fas fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+
+      <div class="project-card glass-card">
+        <div class="project-number">03</div>
+        <div class="project-content">
+          <h3>Restaurant Recommendation</h3>
+          <p class="project-subtitle">Machine Learning</p>
+          <p>Content-based filtering system recommending restaurants based on cuisine type and price-range preferences.</p>
+          <div class="project-tech">
+            <span>Python</span><span>Pandas</span><span>Scikit-learn</span>
+          </div>
+        </div>
+        <a href="https://github.com/Kapil-Saikia/Restaurant-Recommendation-System" target="_blank" class="project-link magnetic-btn" aria-label="View project">
+          <i class="fas fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+
+      <div class="project-card glass-card">
+        <div class="project-number">04</div>
+        <div class="project-content">
+          <h3>SkyCast</h3>
+          <p class="project-subtitle">Weather Application</p>
+          <p>Real-time weather forecasting app with city search, temperature, humidity, and live API data.</p>
+          <div class="project-tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+        </div>
+        <a href="https://github.com/Kapil-Saikia/Weather_App-SkyCast" target="_blank" class="project-link magnetic-btn" aria-label="View project">
+          <i class="fas fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+
+      <div class="project-card glass-card">
+        <div class="project-number">05</div>
+        <div class="project-content">
+          <h3>AI Chatbot</h3>
+          <p class="project-subtitle">Conversational AI</p>
+          <p>Full stack AI chatbot using HuggingFace DialoGPT with Flask backend and persistent chat history.</p>
+          <div class="project-tech">
+            <span>Python</span><span>Flask</span><span>PyTorch</span><span>SQLite</span>
+          </div>
+        </div>
+        <a href="https://github.com/Kapil-Saikia/ai_chatbot_project" target="_blank" class="project-link magnetic-btn" aria-label="View project">
+          <i class="fas fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+
+      <div class="project-card glass-card">
+        <div class="project-number">06</div>
+        <div class="project-content">
+          <h3>Secure Auth System</h3>
+          <p class="project-subtitle">Backend Security</p>
+          <p>JWT-based authentication with bcrypt encryption, user registration, login, and admin access control.</p>
+          <div class="project-tech">
+            <span>Python</span><span>Flask</span><span>JWT</span><span>PostgreSQL</span>
+          </div>
+        </div>
+        <a href="https://github.com/Kapil-Saikia/secure-auth-system" target="_blank" class="project-link magnetic-btn" aria-label="View project">
+          <i class="fas fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Resume -->
+    <div class="bento-tile tile-resume glass-card" id="resume">
+      <div class="tile-label"><i class="fas fa-file-alt"></i> Resume</div>
+      <div class="resume-content">
+        <div class="resume-icon"><i class="fas fa-file-pdf"></i></div>
+        <div>
+          <h2>My Resume</h2>
+          <p>View or download my latest resume to learn more about my experience and skills.</p>
+          <a href="your-resume-link.pdf" target="_blank" class="btn btn-primary magnetic-btn">
+            <i class="fas fa-download"></i> Download CV
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Achievements -->
+    <div class="bento-tile tile-achievements glass-card" id="achievements">
+      <div class="tile-label"><i class="fas fa-award"></i> Achievements</div>
+      <h2>Certifications</h2>
+      <div class="achievements-list">
+        <div class="achievement-item">
+          <div class="achievement-icon">&#127891;</div>
+          <div class="achievement-content">
+            <h4>Machine Learning with Python</h4>
+            <p>IBM &middot; Coursera</p>
+            <a href="https://www.coursera.org/account/accomplishments/verify/OUJHYVQFCYRY" target="_blank" class="cert-link">View Certificate &rarr;</a>
+          </div>
+        </div>
+        <div class="achievement-item">
+          <div class="achievement-icon">&#127760;</div>
+          <div class="achievement-content">
+            <h4>Web App Development with JS &amp; MongoDB</h4>
+            <p>Coursera</p>
+            <a href="https://www.coursera.org/account/accomplishments/verify/CF5YDF9TKFLQ" target="_blank" class="cert-link">View Certificate &rarr;</a>
+          </div>
+        </div>
+        <div class="achievement-item">
+          <div class="achievement-icon">&#128190;</div>
+          <div class="achievement-content">
+            <h4>Databases &amp; SQL for Data Science</h4>
+            <p>IBM &middot; Coursera</p>
+            <a href="https://www.coursera.org/account/accomplishments/verify/VVE8ZHOEGLHY" target="_blank" class="cert-link">View Certificate &rarr;</a>
+          </div>
+        </div>
+        <div class="achievement-item">
+          <div class="achievement-icon">&#128013;</div>
+          <div class="achievement-content">
+            <h4>Python Certificate</h4>
+            <p>HackerRank</p>
+            <a href="https://www.hackerrank.com/certificates/de52d8acaa1e" target="_blank" class="cert-link">View Certificate &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Training -->
+    <div class="bento-tile tile-training glass-card" id="training">
+      <div class="tile-label"><i class="fas fa-graduation-cap"></i> Experience</div>
+      <h2>Training &amp; Internships</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h4>&#129302; Machine Learning Internship</h4>
+              <span class="timeline-date">Jun &ndash; Jul 2025</span>
+            </div>
+            <p class="timeline-org">Cognifyz Technologies</p>
+            <p>Practical ML implementation with regression and classification tasks, data preprocessing, and model evaluation using Python, Pandas, and Scikit-learn.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h4>&#128013; Python Developer Internship</h4>
+              <span class="timeline-date">Jul &ndash; Aug 2025</span>
+            </div>
+            <p class="timeline-org">Codec Technologies</p>
+            <p>Python scripting, file handling, and automation. Built utilities using os, requests, and datetime modules following best practices.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="bento-tile tile-contact" id="contact">
+      <div class="tile-label"><i class="fas fa-envelope"></i> Contact</div>
+      <div class="contact-layout">
+        <div class="contact-info glass-card">
+          <h2>Let's Connect</h2>
+          <p>Open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+          <div class="social-links">
+            <a href="mailto:kapilsaikia63@gmail.com" class="social-link magnetic-btn">
+              <i class="fas fa-envelope"></i><span>kapilsaikia63@gmail.com</span>
+            </a>
+            <a href="https://www.linkedin.com/in/kapil-saikia-855178278" target="_blank" class="social-link magnetic-btn">
+              <i class="fab fa-linkedin"></i><span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/Kapil-Saikia" target="_blank" class="social-link magnetic-btn">
+              <i class="fab fa-github"></i><span>GitHub</span>
+            </a>
+            <a href="https://www.instagram.com/kapilsaikia025" target="_blank" class="social-link magnetic-btn">
+              <i class="fab fa-instagram"></i><span>Instagram</span>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form-wrapper glass-card">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="cname">Name</label>
+              <input type="text" id="cname" name="name" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label for="cemail">Email</label>
+              <input type="email" id="cemail" name="email" placeholder="your@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="cmessage">Message</label>
+              <textarea id="cmessage" name="message" rows="4" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary magnetic-btn full-width">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
   </main>
 
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <div class="brand-initials-sm">KS</div>
+        <span>Kapil Saikia</span>
+      </div>
+      <p>Crafted with &#10084;&#65039; and lots of &#9749; &nbsp;&middot;&nbsp; 2025</p>
+      <div class="footer-links">
+        <a href="https://github.com/Kapil-Saikia" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/kapil-saikia-855178278" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CDN: Three.js and GSAP (must load before script.js) -->
+  <!-- Note: add integrity="sha384-<hash>" crossorigin="anonymous" once SRI hashes are computed from the built files -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" crossorigin="anonymous"></script>
   <script src="script.js"></script>
-  <script>
-  const accordions = document.querySelectorAll(".accordion-btn");
-
-  accordions.forEach(btn => {
-    btn.addEventListener("click", () => {
-      btn.classList.toggle("active");
-      const panel = btn.nextElementSibling;
-      if (panel.style.display === "block") {
-        panel.style.display = "none";
-      } else {
-        panel.style.display = "block";
-      }
-    });
-  });
-</script>
-
 </body>
 </html>
